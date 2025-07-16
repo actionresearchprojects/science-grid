@@ -45,7 +45,7 @@
       height: 100%;
       object-fit: cover;
       display: block;
-      transition: transform 0.3s ease, opacity 0.3s ease;
+      transition: transform 0.3s ease;
     }
 
     .grid a:hover video {
@@ -72,11 +72,26 @@
     }
 
     .grid a:hover .overlay {
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.15);
     }
 
     .grid a:hover .overlay-text {
       opacity: 1;
+    }
+
+    .label {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      z-index: 2;
+      color: black;
+      font-size: clamp(1rem, 2.5vw, 2rem);
+      text-shadow:
+        -1px -1px 0 white,
+         1px -1px 0 white,
+        -1px  1px 0 white,
+         1px  1px 0 white;
+      font-weight: bold;
     }
 
     @media (max-width: 600px) {
@@ -91,38 +106,42 @@
       .grid a .overlay-text {
         font-size: 1.2em;
       }
+
+      .label {
+        font-size: clamp(0.8rem, 4vw, 1.2rem);
+      }
     }
   </style>
 </head>
 <body>
   <div class="grid">
-    <a href="https://actionresearchprojects.framer.website/pattern-guide-1" target="_top">
+    <a href="https://actionresearchprojects.framer.website/science/success-criteria" target="_top">
       <video autoplay loop muted playsinline poster="icons/static/placeholder.jpg">
         <source src="icons/video/placeholder.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <div class="overlay"><div class="overlay-text">Placeholder</div></div>
+      <div class="label">Success Criteria</div>
     </a>
-    <a href="https://actionresearchprojects.framer.website/pattern-guide-1" target="_top">
+    <a href="https://actionresearchprojects.framer.website/science/heat-and-humans" target="_top">
       <video autoplay loop muted playsinline poster="icons/static/placeholder.jpg">
         <source src="icons/video/placeholder.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <div class="overlay"><div class="overlay-text">Placeholder</div></div>
+      <div class="label">Heat & Humans</div>
     </a>
-    <a href="https://actionresearchprojects.framer.website/pattern-guide-1" target="_top">
+    <a href="https://actionresearchprojects.framer.website/science/data-analysis" target="_top">
       <video autoplay loop muted playsinline poster="icons/static/placeholder.jpg">
         <source src="icons/video/placeholder.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <div class="overlay"><div class="overlay-text">Placeholder</div></div>
+      <div class="label">Data Analysis</div>
     </a>
-    <a href="https://actionresearchprojects.framer.website/pattern-guide-1" target="_top">
+    <a href="https://actionresearchprojects.framer.website/science/climate-change" target="_top">
       <video autoplay loop muted playsinline poster="icons/static/placeholder.jpg">
         <source src="icons/video/placeholder.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <div class="overlay"><div class="overlay-text">Placeholder</div></div>
+      <div class="label">Climate Change</div>
     </a>
   </div>
 </body>
