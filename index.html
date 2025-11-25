@@ -20,8 +20,8 @@
 
     .grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
       gap: 10px;
       height: 100%;
       width: 100%;
@@ -29,7 +29,7 @@
 
     .grid a {
       position: relative;
-      transform: translateZ(0); /* Force new stacking context */
+      transform: translateZ(0);
       display: block;
       width: 100%;
       height: 100%;
@@ -40,7 +40,7 @@
       z-index: 0;
     }
 
-    .grid a video {
+    .grid a img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -48,7 +48,7 @@
       transition: transform 0.3s ease;
     }
 
-    .grid a:hover video {
+    .grid a:hover img {
       transform: scale(1.05);
     }
 
@@ -59,7 +59,6 @@
       transition: background-color 0.3s ease;
       z-index: 3;
       pointer-events: none;
-      will-change: background-color;
     }
 
     .grid a:hover .overlay {
@@ -72,12 +71,12 @@
       left: 10px;
       z-index: 4;
       color: black;
-      font-size: clamp(1rem, 2.5vw, 2rem);
+      font-size: clamp(1rem, 2vw, 1.8rem);
       font-weight: bold;
       text-shadow:
         -1px -1px 0 white,
          1px -1px 0 white,
-        -1px  1px 0 white,
+        -1px -1px 0 white,
          1px  1px 0 white;
       pointer-events: none;
     }
@@ -92,41 +91,50 @@
       }
 
       .label {
-        font-size: clamp(0.8rem, 4vw, 1.2rem);
+        font-size: clamp(0.8rem, 3.5vw, 1.2rem);
       }
     }
   </style>
 </head>
 <body>
   <div class="grid">
-    <a href="https://actionresearchprojects.net/science/success-criteria" target="_top">
-      <video autoplay loop muted playsinline poster="icons/static/placeholder.jpg">
-        <source src="icons/video/placeholder.mp4" type="video/mp4" />
-      </video>
+
+    <a href="https://www.actionresearchprojects.net/science/1-arc-standard" target="_top">
+      <img src="icons/placeholder.jpg" alt="">
       <div class="overlay"></div>
-      <div class="label">Success Criteria</div>
+      <div class="label">Module 1: The ARC standard for cool buildings</div>
     </a>
-    <a href="https://actionresearchprojects.net/science/heat-and-humans" target="_top">
-      <video autoplay loop muted playsinline poster="icons/static/placeholder.jpg">
-        <source src="icons/video/placeholder.mp4" type="video/mp4" />
-      </video>
+
+    <a href="https://www.actionresearchprojects.net/science/2-physical-factors" target="_top">
+      <img src="icons/placeholder.jpg" alt="">
       <div class="overlay"></div>
-      <div class="label">Heat & Humans</div>
+      <div class="label">Module 2: Physical factors that affect comfort</div>
     </a>
-    <a href="https://actionresearchprojects.net/science/data-analysis" target="_top">
-      <video autoplay loop muted playsinline poster="icons/static/placeholder.jpg">
-        <source src="icons/video/placeholder.mp4" type="video/mp4" />
-      </video>
+
+    <a href="https://www.actionresearchprojects.net/science/3-keeping-cool" target="_top">
+      <img src="icons/placeholder.jpg" alt="">
       <div class="overlay"></div>
-      <div class="label">Data Analysis</div>
+      <div class="label">Module 3: Keeping cool in heatwaves</div>
     </a>
-    <a href="https://actionresearchprojects.net/science/climate-change" target="_top">
-      <video autoplay loop muted playsinline poster="icons/static/placeholder.jpg">
-        <source src="icons/video/placeholder.mp4" type="video/mp4" />
-      </video>
+
+    <a href="https://www.actionresearchprojects.net/science/4-three-zone" target="_top">
+      <img src="icons/placeholder.jpg" alt="">
       <div class="overlay"></div>
-      <div class="label">Climate Change</div>
+      <div class="label">Module 4: The ‘three zone’ concept for buildings</div>
     </a>
+
+    <a href="https://www.actionresearchprojects.net/science/5-resources" target="_top">
+      <img src="icons/placeholder.jpg" alt="">
+      <div class="overlay"></div>
+      <div class="label">Module 5: Resources</div>
+    </a>
+
+    <a href="https://www.actionresearchprojects.net/science/6-insect-protection" target="_top">
+      <img src="icons/placeholder.jpg" alt="">
+      <div class="overlay"></div>
+      <div class="label">Module 6: Insect protection</div>
+    </a>
+
   </div>
 </body>
 </html>
