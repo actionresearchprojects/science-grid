@@ -8,7 +8,6 @@
     * {
       box-sizing: border-box;
     }
-
     html, body {
       margin: 0;
       padding: 0;
@@ -17,7 +16,6 @@
       font-family: 'Ubuntu', sans-serif;
       background: #fff;
     }
-
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -26,7 +24,6 @@
       height: 100%;
       width: 100%;
     }
-
     .grid a {
       position: relative;
       transform: translateZ(0);
@@ -39,7 +36,6 @@
       background: #000;
       z-index: 0;
     }
-
     .grid a img {
       width: 100%;
       height: 100%;
@@ -47,11 +43,9 @@
       display: block;
       transition: transform 0.3s ease;
     }
-
     .grid a:hover img {
       transform: scale(1.05);
     }
-
     .overlay {
       position: absolute;
       inset: 0;
@@ -60,11 +54,9 @@
       z-index: 3;
       pointer-events: none;
     }
-
     .grid a:hover .overlay {
       background-color: rgba(0, 0, 0, 0.25) !important;
     }
-
     .label {
       position: absolute;
       bottom: 10px;
@@ -80,16 +72,13 @@
          1px  1px 0 white;
       pointer-events: none;
     }
-
     @media (max-width: 600px) {
       .grid {
         gap: 4px;
       }
-
       .grid a {
         border-width: 0.5px;
       }
-
       .label {
         font-size: clamp(0.8rem, 3.5vw, 1.2rem);
       }
@@ -98,43 +87,41 @@
 </head>
 <body>
   <div class="grid">
-
     <a href="https://www.actionresearchprojects.net/science/1-arc-standard" target="_top">
       <img src="icons/placeholder.jpg" alt="">
       <div class="overlay"></div>
       <div class="label">Module 1: The ARC standard for cool buildings</div>
     </a>
-
     <a href="https://www.actionresearchprojects.net/science/2-physical-factors" target="_top">
       <img src="icons/placeholder.jpg" alt="">
       <div class="overlay"></div>
       <div class="label">Module 2: Physical factors that affect comfort</div>
     </a>
-
     <a href="https://www.actionresearchprojects.net/science/3-keeping-cool" target="_top">
       <img src="icons/placeholder.jpg" alt="">
       <div class="overlay"></div>
       <div class="label">Module 3: Keeping cool in heatwaves</div>
     </a>
-
     <a href="https://www.actionresearchprojects.net/science/4-three-zone-concept" target="_top">
       <img src="icons/placeholder.jpg" alt="">
       <div class="overlay"></div>
-      <div class="label">Module 4: The ‘three zone’ concept for buildings</div>
+      <div class="label">Module 4: The 'three zone' concept for buildings</div>
     </a>
-
     <a href="https://www.actionresearchprojects.net/science/5-resources" target="_top">
       <img src="icons/placeholder.jpg" alt="">
       <div class="overlay"></div>
       <div class="label">Module 5: Resources</div>
     </a>
-
     <a href="https://www.actionresearchprojects.net/science/6-insect-protection" target="_top">
       <img src="icons/placeholder.jpg" alt="">
       <div class="overlay"></div>
       <div class="label">Module 6: Insect protection</div>
     </a>
-
+    <a href="https://www.actionresearchprojects.net/science/7-citizen-science" target="_top">
+      <img src="icons/placeholder.jpg" alt="">
+      <div class="overlay"></div>
+      <div class="label">Module 7: Citizen Science Experiments</div>
+    </a>
   </div>
 </body>
 </html>
