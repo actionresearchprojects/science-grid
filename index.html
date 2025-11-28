@@ -18,11 +18,22 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(12, 1fr);
       grid-template-rows: repeat(2, 1fr);
       gap: 10px;
       height: 100%;
       width: 100%;
+    }
+    .grid a:nth-child(1),
+    .grid a:nth-child(2),
+    .grid a:nth-child(3) {
+      grid-column: span 4;
+    }
+    .grid a:nth-child(4),
+    .grid a:nth-child(5),
+    .grid a:nth-child(6),
+    .grid a:nth-child(7) {
+      grid-column: span 3;
     }
     .grid a {
       position: relative;
